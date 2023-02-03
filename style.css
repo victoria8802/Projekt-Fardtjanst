@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*anger hur långa textrader får vara samt radhöjd*/
+p { 
+    max-width: 55ch;
+    line-height: 40px;
+    
+
+}
+
+/* Design av Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #0077B6;
+    margin: 0;
+    position: relative;
+    padding: 0 1em;
+
+
+}
+
+/*placerar logotyp i övre vänster hörn*/
+
+.logo {
+    display: grid;
+    place-items: center;
+}
+
+/*Färgsätter och positionerar rubriken i menyn*/
+ 
+.header_rubrik {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/*design för navigationen*/
+
+nav {
+    background-color: #0077B6;
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 200vh;
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+}
+
+nav li:hover {
+    background-color: #006297;
+    cursor: pointer;
+}
+
+/* Meny knapp, öppna meny */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: #0077B6;
+    border: white solid 2px;
+    cursor: pointer;
+}
+
+.open {
+    margin: 0 12em;
+}
+
+
+/* hamburgerikon */
+.bars {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+
+
+
+/* stängknapp*/
+.close {
+    margin: 2em 25em;
+    padding: 10px 15px;
+
+}
+
+/* kryss för att stänga menyn */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+.menu-text {
+    color: white;
+    padding: 5px;
+}
+
+
+
+/*design för breadcrumbs*/
+
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    font-size: 22px;
+
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #006297
+}
+
+/* välkomsttext startsida*/
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin: 1em 0;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+/*knappar för startsidan*/
+.choice {
+    color: white;
+    background-color: #0077B6;
+    border: white;
+    border-radius: 20px;
+    margin: 1.5em;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+
+
+}
+
+.choice a {
+    text-decoration: none;
+}
+
+.choice-text {
+    font-size: 2em; 
+    
+}
+
+/*radio-buttons*/
+
+input[type="radio"]{
+    margin :1rem;
+  
+}
+/*test för vidareklick till info om färdtjänst*/
+.fardtjanst {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/*knappar*/
+
+.click, .click_one {
+    background-color: #0077B6;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+   
+
+}
+/*adderar mellanrum mellan Avboka Omboka på mina resor*/
+
+.click{
+    margin-right: 20px;
+}
+
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+/*input fält vid bokning/ombokning*/
+.field {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*centrerar allt innehåll*/
+.content2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.knappar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menyknapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content
+}
+
+
+
+h1,
+h2,
+h3 {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.symbol {
+    padding: 10px;
+}
+
+/*design av footern*/
+.footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 1em;
+    background: #0077B6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.footer div {
+    text-align: center;
+
+}
+
+.footer div h3 {
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+/*design av länkar*/
+
+a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.content a:visited, .content a:link, .content a:active{
+    color: black;
+}
+
+a:hover, .content a:hover{
+    color:rgb(250, 116, 44)
+}
+
+
+
+/* Media querys */
+
+@media only screen and (min-width: 801px) {
+    header {
+        padding: 0 3em;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    .text-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        
+    }    
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 1.4em;
+        width: 100%;
+        padding: 10px;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+  
+    /*färgmarkerar i menyn var en befinner sig*/
+
+li a.active{
+    background-color: rgb(250, 116, 44);
+    color: #006297;
+}
+
+}
+
+@media only screen and (min-width: 1025px){
+    header {
+        padding: 0 3em;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    .text-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+       
+        
+    }    
+
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 1.4em;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2em 0;
+    }
+
+    /*färgmarkerar i menyn var en befinner sig*/
+
+li a.active{
+    background-color: rgb(250, 116, 44);
+    color: #006297;
+}
+
+    .col-1{
+        margin-left: 15em;
+    }
+    
+    .col-2{
+        margin-right: 15em;
+        
+    }
+}
+
+

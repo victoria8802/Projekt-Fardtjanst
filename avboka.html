@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.png">
+    <title>Färdtjänst Stockholm - Avboka</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo"><a href="index.html">
+
+                <picture id="logo">
+                    <source srcset="bilder/logotyp.svg" alt="Logotyp för Färdtjänst Stockholm">
+                    <img src="bilder/logotyp.svg" alt="Logotyp för Färdtjänst Stockholm">
+                </picture>
+            </a>
+        </div>
+        <div class="text-menu">
+            <h1 class="header_rubrik"><a href="index.html">Färdtjänst Stockholm</h1></a>
+
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+
+            </button>
+
+
+            <nav id="nav-menu">
+
+                <button class="menu-btn close" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <br><br><br>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="boka.html">Boka</a></li>
+                    <li><a href="minaresor.html ">Mina resor</a></li>
+                    <li><a class="active" href="avboka.html ">Avboka</a></li>
+                    <li><a href="omboka.html ">Omboka</a></li>
+                    <li><a href="about.html ">Om färdtjänst</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <picture id="header_top">
+        <source media="(min-width: 1025px)" srcset="bilder/header-bild.jpg">
+        <source media="(min-width: 801px)" srcset="bilder/header-bild-mellan.jpg">
+        <source media="(max-width: 800px)" srcset="bilder/header-bild-liten.jpg">
+        <img src="bilder/header-bild.jpg" alt="Bilförare bakom ratt">
+    </picture>
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="inlogg.html">Logga in</a></li>
+        <li>Avboka</li>
+    </ul>
+
+    <h1>Avboka resa</h1>
+    
+        <div class="content2">
+
+            <input type="radio" name="restyp" value="avboka">
+
+            <p>Resa:<br />
+                ÅÅÅÅ-MM-DD<br />
+                Tid<br />
+                Från: Gatuadress<br />
+                Till: Gatuadress<br /><br /></p>
+        </div>
+
+        <div class="content2">
+            <button class="click_one" id="log">
+                <a href="bekraftelse.html">
+                    <span class="choice-text">Avboka</span>
+                </a>
+            </button>
+        </div>
+   
+
+    
+    <div class="footer">
+        <div class="col-1">
+            <a href="kontakt.html">
+                <h3>KONTAKT</h3>
+            </a>
+            <img src="bilder/telefon_vit.png" alt="telefonsymbol"> 08-123 456 78<br>
+            <img src="bilder/mail_vit.png" alt="mailsymbol"> kontakt@test.se
+
+        </div>
+        <div class="col-2">
+            <p><a href="access.html"></p>
+            <h3>TILLGÄNGLIGHETSREDOGÖRELSE</h3><BR />
+            <P>Läs mer om tillgängligheten på vår<br />
+                webbplats här</a></p>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
