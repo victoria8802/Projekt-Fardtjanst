@@ -202,6 +202,8 @@ main p {
 
 .choice a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .choice-text {
@@ -209,12 +211,12 @@ main p {
     
 }
 
-/*radio-buttons*/
-
-input[type="radio"]{
-    margin :1rem;
-  
+.content_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 /*test för vidareklick till info om färdtjänst*/
 .fardtjanst {
     display: flex;
@@ -258,8 +260,9 @@ input[type="radio"]{
 .content2 {
     display: flex;
     justify-content: center;
-
+   
 }
+
 
 .knappar{
     list-style: none;
@@ -315,7 +318,9 @@ h3 {
 
 /*design av länkar*/
 
-a:visited, a:link, a:active {
+
+
+a:visited, a:link, a:active{
     text-decoration: none;
     color: white;
 }
@@ -365,7 +370,7 @@ a:hover, .content a:hover{
     }
 
     nav ul {
-        height: 100%;
+        line-height: 3;
     }
 
   
@@ -375,6 +380,8 @@ li a.active{
     background-color: rgb(250, 116, 44);
     color: #006297;
 }
+
+
 
 }
 
@@ -425,6 +432,8 @@ li a.active{
     background-color: rgb(250, 116, 44);
     color: #006297;
 }
+
+
 
     .col-1{
         margin-left: 15em;
